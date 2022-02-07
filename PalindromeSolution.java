@@ -1,5 +1,7 @@
-class PalindromeSolution {
-  public static void main(String[] args) {
+package ProblemSolving;
+
+public class PalindromeSolution {
+    public static void main(String[] args) {
         PalindromeSolution p = new PalindromeSolution();
         System.out.println(p.isPalindrome("0P"));
     }
@@ -16,8 +18,11 @@ class PalindromeSolution {
                 st.append(ch[i]);
             }
         }
+        System.out.println(st+" - "+st.length());
         int k=0,o = st.length()-1;
+        System.out.println();
         while(k<o) {
+            System.out.println(st.charAt(k)+ "!=" +st.charAt(o));
             if (st.charAt(k) != st.charAt(o)) {
                 return false;
             }
